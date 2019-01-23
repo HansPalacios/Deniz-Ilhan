@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0'
 # Sendgrid
 gem 'sendgrid-ruby'
 # Instafeed gem to show recent instagram posts
-gem 'instafeed'
+# gem 'instafeed'
 # Jquery gem
 gem 'jquery-rails'
 # Use AWS-S3 for image, video, and mp3 storage

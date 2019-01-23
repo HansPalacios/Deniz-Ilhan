@@ -1,7 +1,34 @@
-<div class="container-fluid" id="home">
-	<div class="row">
-		<div class="welcome">
-			<h1>Hello Hans</h1>
+<div class="container-fluid no-gutters" id="home">
+	<div class="col-md-12" id="info">
+		<div class="col-md-6 col-sm-6 col-xs-6 halves">
+			<div class="row">
+				<h5>Sketches</h5>
+			</div>
+			<div class="row">
+				<p>Short bio for each page and what it contains</p>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6 halves">
+			<div class="row">
+				<h5>Animations</h5>
+			</div>
+			<div class="row">
+				<p>Short bio for each page and what it contains</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12 no-gutters" id="animation">
+		<%=image_tag image_url("https://s3.amazonaws.com/denizilhan/trumpetguy.png")%>
+		<div id="links">
+			<div class="row">
+				<%= image_tag image_url("https://s3.amazonaws.com/denizilhan/blfb.png") %>
+			</div>
+			<div class="row">
+				<%= image_tag image_url("https://s3.amazonaws.com/denizilhan/blinsta.png") %>
+			</div>
+			<div class="row">
+				<%= image_tag image_url("https://s3.amazonaws.com/denizilhan/behancebw.png"), :id => "behance" %>
+			</div>
 		</div>
 	</div>
 </div>
