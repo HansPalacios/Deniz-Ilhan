@@ -1,11 +1,12 @@
 #header {
 	height: 80px;
 		display: block;
-		h3 {
+		h2 {
 			position: absolute;
 			left: 10%;
 			top: 0px;
-			font-weight: 900;
+			// font-weight: 900;
+			font-size: 40px;
 		}
 		img {
 			height: 30px;
@@ -21,6 +22,7 @@
 	text-align: center;
 	display: block;
 	overflow: hidden;
+	padding-top: 5%;
 	#info {
 		height: 200px;
 		position: relative;
@@ -47,7 +49,7 @@
 			margin-top: 20px;
 		}
 		#buttons {
-			width: 150px;
+			width: 250px;
 			margin: 0 auto;
 		}
 		#button1, #button2 {
@@ -68,9 +70,10 @@
 			transform: translate(-50%, -50%);
 			p {
 				margin: 10px auto;
+				margin-bottom: 20px;
 				width: 200px;
 			}
-			h6 {
+			a {
 				cursor: pointer;
 				margin: 20px auto;
 				width: 100px;
@@ -116,11 +119,18 @@
 				height: 20px;
 				margin: 10px auto;
 			}
+			a {
+				cursor: pointer;
+			}
 			#behance {
+				// padding-right: 2px;
+				img{
 				height: 25px;
 				margin: 8px auto;
-				padding-left: 1px;
+				
 			}
+		}
+
 		}
 	}
 }
