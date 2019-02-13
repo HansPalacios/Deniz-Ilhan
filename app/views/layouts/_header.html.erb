@@ -1,6 +1,29 @@
 <div class="container-fluid" id="header">
 	<div class="row">
 		<h2>Deniz O. Ilhan</h2>
-		<%=image_tag image_url("https://s3.amazonaws.com/denizilhan/hamburgermenu.png")%>
+		<span onclick="openNav()">
+			<%=image_tag image_url("https://s3.amazonaws.com/denizilhan/hamburgermenu.png")%>
+		</span>
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+	  	<%=image_tag image_url("https://s3.amazonaws.com/denizilhan/hamburgermenu.png")%>
+  	</a>
+	  <div class="col-md-4 col-sm-6 col-xs-12" >
+		  <div class="row">
+		  	<p>Deniz O. Ilhan</p>
+		  	<p>New York, NY</p>
+		  	<p>Deniz@ilhan.com</p>
+		  	<p>212-454-4545</p>
+		  </div>
+		</div>
+		<div class="col-md-8 col-sm-6 col-xs-12 links">
+			<a href="#">Home</a>
+		  <a href="#">About</a>
+		  <a href="#">Gallery</a>
+		  <a href="#">Store</a>
+		  <a href="#">Contact</a>
+		  
+		</div>
 	</div>
 </div>
