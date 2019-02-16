@@ -13,25 +13,18 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
+function closeNav() {
+  document.getElementById("mySidenav").style.left = "100%";
+}
 
 
 if ($(window).width() < 600) {
    function openNav() {
-  document.getElementById("mySidenav").style.left = "20%";
+	  document.getElementById("mySidenav").style.left = "20%";
+	}
 }
-
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mySidenav").style.left = "100%";
-}
-}
-else {
+else if ($(window).width() > 600) {
    function openNav() {
-  document.getElementById("mySidenav").style.left = "calc( 100% - 500px)";
-}
-
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mySidenav").style.left = "100%";
-}
+	  document.getElementById("mySidenav").style.left = "calc( 100% - 500px)";
+	}
 }
