@@ -1,0 +1,51 @@
+@media screen and (max-width: 600px) { 
+
+#header {
+	h2 {
+		font-size: 25px;
+	}
+	img {
+		top: 10px;
+		right: 20px;
+	}
+	.sidenav {
+		width: 80%;
+
+		#menu_info {
+			display: none;
+		}
+		.links {
+			width: 100%;
+			text-align: center;
+		}
+		.closebtn {
+			top: 9px;
+			right: 29px;
+		}
+	}
+}
+#home {
+	#info {
+		width: 100%;
+		#shadow {
+			width: 80%;
+			#buttons {
+				width: 100%;
+			}
+		}
+		
+	}
+	#animation {
+		#links {
+			right: 10px;
+		}
+		#trumpet {
+				position: absolute;
+				top: 70%;
+		    left: 40%;
+				max-height: 40%;
+				max-width: 50%;
+			}
+		}
+	}
+}

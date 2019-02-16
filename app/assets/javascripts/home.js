@@ -20,7 +20,7 @@ $(document).ready(function(){
                 goto1.href = "#"
                 button2.css('box-shadow', 'none');
                 button1.css('box-shadow', '0px 5px 20px -5px rgba(0,0,0,.5)');
-                trumpet.attr('src', TrumpetPath);
+                // trumpet.attr('src', TrumpetPath);
 
     });
     button2.hover(function() {
@@ -30,7 +30,7 @@ $(document).ready(function(){
                 goto1.href = "#"
                 button1.css('box-shadow', 'none');
                 button2.css('box-shadow', '0px 5px 20px -5px rgba(0,0,0,.5)');
-                trumpet.attr('src', ColorTrumpetPath);
+                // trumpet.attr('src', ColorTrumpetPath);
 
   });
 

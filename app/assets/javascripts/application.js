@@ -14,11 +14,24 @@
 //= require activestorage
 //= require_tree .
 
-function openNav() {
-  document.getElementById("mySidenav").style.left = "0";
+
+if ($(window).width() < 600) {
+   function openNav() {
+  document.getElementById("mySidenav").style.left = "20%";
 }
 
 /* Close/hide the sidenav */
 function closeNav() {
   document.getElementById("mySidenav").style.left = "100%";
+}
+}
+else {
+   function openNav() {
+  document.getElementById("mySidenav").style.left = "calc( 100% - 500px)";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.left = "100%";
+}
 }
