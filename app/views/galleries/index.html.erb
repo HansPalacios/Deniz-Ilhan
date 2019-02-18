@@ -1,0 +1,62 @@
+ <div class="container-fluid" id="gallery">
+  <div class="col-md-12">
+    <div id="sketches">
+      <span onclick="openSketch()">
+        <p class="vertical-text">Sketches</p>
+      </span>
+      
+
+      <div id="show_sketches">
+        <% @galleries.sketch.each do |gallery| %>
+          <div class="artwork" id="art<%= gallery.id %>">
+            <%= image_tag image_url(gallery.art) %>
+            <div class="art_info" id="info<%=gallery.id %>">
+              <p><%= gallery.caption %></p>
+              <p><%= gallery.date_created %></p>
+            </div>
+          </div>
+          <script>
+            $('#art<%= gallery.id %>').hover(function() {
+              $('#info<%= gallery.id %>').show();
+            });
+          </script>
+        <% end %>
+      </div>
+    </div>
+    <div id="animations">
+      <span onclick="openAnimation()">
+        <p class="vertical-text">Animations</p>
+      </span>
+       
+      <div id="show_animations">
+        <% @galleries.animation.each do |gallery| %>
+          <div class="artwork" id="art<%= gallery.id %>">
+            <%= image_tag image_url(gallery.art) %>
+            <div class="info_box" id="infobox<%=gallery.id %>">
+              <div class="art_info" id="info<%=gallery.id %>">
+                <p><%= gallery.caption %></p>
+                <p><%= gallery.date_created %></p>
+              </div>
+            </div>
+          </div>
+          <script>
+            $('#infobox<%= gallery.id %>').mouseover(function() {
+              $('#info<%= gallery.id %>').style = 'inline-block';
+            });
+            $('#infobox<%= gallery.id %>').mouseout(function() {
+              $('.art_info').hide();
+            });
+          </script>
+        <% end %>
+      </div>
+    </div>
+
+
+
+        
+
+  <br>
+
+  <%= link_to 'New Gallery', new_gallery_path %>
+  </div>
+</div>

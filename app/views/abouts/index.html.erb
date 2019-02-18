@@ -1,0 +1,78 @@
+<div class="container-fluid" id="about">
+  <div class="col-md-4 col-sm-6 col-xs-6" id="image">
+    
+
+    <%= image_tag image_url("https://s3.amazonaws.com/denizilhan/deniz.jpg") %>
+
+    
+    
+  </div>
+  <div class="col-md-1 col-sm-1 col-xs-1">
+    <div id="links">
+        <a href="https://www.instagram.com/denizilhan/" target="_blank"><%= image_tag image_url("https://s3.amazonaws.com/denizilhan/blfb.png") %></a>
+        <a href="https://www.instagram.com/denizilhan/" target="_blank"><%= image_tag image_url("https://s3.amazonaws.com/denizilhan/blinsta.png") %></a>
+        <a href="https://www.instagram.com/denizilhan/" target="_blank" id="behance"><%= image_tag image_url("https://s3.amazonaws.com/denizilhan/behancebw.png") %></a>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-5 col-xs-5">
+    
+
+
+    <div class="row">
+      <h3>Skills</h3>
+      <ul class="no-gutters">
+        <% @abouts.skills.each do |list| %>
+          <ol class="no-gutters"><%= list.skill %></ol>
+        <% end %>
+        
+      </ul>
+    </div>
+    <div class="row">
+      <h3>Interests</h3>
+      <ul class="no-gutters">
+        <% @abouts.interests.each do |list| %>
+          <ol class="no-gutters"><%= list.interest %></ol>
+        <% end %>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="col-md-5 col-sm-12 col-xs-12">
+    <% @abouts.bios.each do |list| %>
+      <p><%= list.bio %></p>
+    <% end %>
+  </div>
+</div>
+
+
+
+<!-- 
+<h1>Abouts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bio</th>
+      <th>Pic</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <#% @abouts.each do |about| %>
+      <tr>
+        <td><#%= about.bio %></td>
+        <td><#%= about.pic %></td>
+        <td><#%= link_to 'Show', about %></td>
+        <td><#%= link_to 'Edit', edit_about_path(about) %></td>
+        <td><#%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <#% end %>
+  </tbody>
+</table>
+
+<br>
+
+<#%= link_to 'New About', new_about_path %>
+ --> 

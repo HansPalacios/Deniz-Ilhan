@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  art: MyString
+  caption: MyString
+  date_created: 2019-02-17
+
+two:
+  art: MyString
+  caption: MyString
+  date_created: 2019-02-17

@@ -1,0 +1,55 @@
+// Place all the styles related to the galleries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#gallery {
+	#sketches, #animations {
+		height: 100%;
+		span {
+			height: 100%;
+			width: 100px;
+			p {
+				text-orientation: sideways;
+			}
+		}
+		.artwork {
+			height: 200px;
+			position: relative;
+			display: inline-block;
+
+			img {
+				height: 200px;
+				width: auto;
+				
+			}
+			.info_box {
+				// display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				p {
+					margin: 10px auto;
+				}
+			}
+			.art_info {
+				display: none;
+			}
+		}
+	}
+	#show_animations {
+		display: none;
+	}
+	#sketches {
+		display: inline-block;
+		width:calc(100% - 100px);
+		height: 100%;
+	}
+	#animations {
+		display: inline-block;
+		width: 90px;
+		height: 100%;
+	}
+	
+}

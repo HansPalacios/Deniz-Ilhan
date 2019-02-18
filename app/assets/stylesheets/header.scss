@@ -18,25 +18,34 @@ $hovermenu: #f1f1f1;
       right: 50px;
       cursor: pointer;
     }
+    #notice {
+      position: absolute;
+      top: 20px;
+      right: 100px;
+      width: 150px;
+      height: 30px;
+    }
   .sidenav {
     height: 100%;
-    width: 500px; 
+    width: 450px; 
     position: fixed; 
     z-index: 2;
     top: 0;
-    left: 100%;
+    right: -450px;
     background-color: white; 
-    box-shadow: 0px 5px 50px -1px rgba(0,0,0,1);
+    // box-shadow: 0px 5px 50px -1px rgba(0,0,0,1);
     overflow-x: hidden;
-    padding-top: 50px; 
+    padding: 50px 0;
     transition: 0.5s; 
     #menu_info {
       width: 200px;
-      height: 200px;
+      // height: 120px;
       padding: 10px;
+      margin-top: -20px;
     }
     .links {
       text-align: center;
+      height: 100%;
       a {
         padding: 20px;
         text-decoration: none;
@@ -45,15 +54,16 @@ $hovermenu: #f1f1f1;
         display: block;
         transition: 0.3s;
         margin: 0 auto;
+        &:hover {
+          color: $hovermenu;
+        }
       }
     }
    
     p {
       display: block;
       width: 100%;
-    }
-    a:hover {
-      color: $hovermenu;
+      // margin: 5px auto;
     }
 
     .closebtn {
@@ -64,11 +74,22 @@ $hovermenu: #f1f1f1;
       color: $greymenu;
     }
   }
-}
-  .main {
-    transition: margin-left .5s;
-    padding: 20px;
+  .developer {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 40px 56px;
+    p {
+      font-size: 12px;
+      width: 150px;
+      margin: 0;
+    }
   }
+}
+  // .main {
+  //   transition: margin-left .5s;
+  //   padding: 20px;
+  // }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 50px;}

@@ -1,3 +1,9 @@
+@media screen and (min-width: 600px) { 
+	.sidenav {
+		right: -450px;
+	}
+}
+
 @media screen and (max-width: 600px) { 
 
 #header {
@@ -10,6 +16,7 @@
 	}
 	.sidenav {
 		width: 80%;
+		right: -80%;
 
 		#menu_info {
 			display: none;

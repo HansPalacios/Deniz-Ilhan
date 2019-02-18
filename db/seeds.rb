@@ -5,3 +5,84 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+ abouts = About.create([
+{if_skill: true, skill: "Illustration"},
+{if_skill: true, skill: "Animation"},
+{if_skill: true, skill: "Sketches"},
+{if_skill: true, skill: "Graphic Design"},
+{if_skill: true, skill: "Short Films"},
+
+{if_interest: true, interest: "Virtual Reality"},
+{if_interest: true, interest: "Political Sketches"},
+{if_interest: true, interest: "Filmwork"},
+{if_interest: true, interest: "Business Development"},
+{if_interest: true, interest: "Marketing"},
+
+{if_bio:true, bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
+{if_bio:true, bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+ ]);
+
+ galleries = Gallery.create([
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_sketch: true },
+
+
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+{art: "https://s3.amazonaws.com/denizilhan/deniz.jpg", caption: "Best picture in the world", date_created: "1-1-19", if_animation: true },
+ ])
